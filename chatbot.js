@@ -7,6 +7,14 @@ function toggleChatPopup() {
     }
 }
 
+function toggleClosePopup() {
+    document.getElementById("chatPopup").classList.toggle("open");
+    if (document.getElementById("chatBody").innerHTML === "") {
+        renderChat(currentId);
+    }
+    resetChat();
+}
+
 function resetChat() {
     const chatBody = document.getElementById("chatBody");
 
