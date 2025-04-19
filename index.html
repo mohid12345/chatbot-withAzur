@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Chatbot</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="chatbot-icon" onclick="toggleChatPopup()">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/chat.png" alt="Chat" />
+        </div>
+
+        <div class="chat-popup" id="chatPopup">
+            <div class="chat-header">
+                <div class="logo-header">
+                    <img class="" src="https://img.icons8.com/?size=70&id=1YggeGIKJH2D&format=png&color=000000" />
+                    <p>Halleak Vineyard</p>
+                </div>
+                <div class="small-button">
+                    <span id="closeRefresh" onclick="resetChat()"
+                        ><img
+                            src="https://img.icons8.com/?size=100&id=59872&format=png&color=FFFFFF"
+                            alt=""
+                            style="width: 20px; height: 20px"
+                        />
+                    </span>
+                    <span onclick="toggleChatPopup()">-</span>
+                    <span onclick="toggleChatPopup()">✕</span>
+                </div>
+            </div>
+
+            <!-- //body -->
+            <div class="chat-body" id="chatBody"></div>
+
+            <div class="chat-input">
+                <input type="text" placeholder="Ask me anything..." />
+                <button><img src="https://img.icons8.com/ios-filled/20/ffffff/paper-plane.png" /></button>
+            </div>
+        </div>
+
+        <script src="chatData.js"></script>
+        <script src="chatbot.js"></script>
+    </body>
+</html>
