@@ -8,14 +8,10 @@ function toggleChatPopup() {
 }
 
 function resetChat() {
-    // Clear the chat body and options
     const chatBody = document.getElementById("chatBody");
-    const chatOptions = document.getElementById("chatOptions");
 
     chatBody.innerHTML = "";
-    chatOptions.innerHTML = "";
 
-    // Reset to welcome and render again
     currentId = "welcome";
     renderChat(currentId);
 }
