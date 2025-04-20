@@ -41,6 +41,21 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+.chat-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0; /* Ensures no gap between elements */
+}
+
+.chat-logo img {
+    margin: 0; /* Removes default margin from the image */
+}
+
+.chat-logo p {
+    margin: 0; /* Removes default margin from the paragraph */
+    padding: 0; /* Removes any padding */
+}
 
 .chat-body {
     padding: 10px;
