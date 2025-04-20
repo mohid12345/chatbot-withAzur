@@ -45,7 +45,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0; 
+    gap: 0;
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -55,11 +55,10 @@ body {
 }
 
 .chat-logo p {
-    margin: 0; 
-    padding: 0; 
-    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", Times, serif;
     font-size: 10px;
-
 }
 .chat-body {
     padding: 10px;
@@ -70,10 +69,8 @@ body {
     /* background-color: #fff; */
     background-image: url("./public/bg.png");
     background-repeat: repeat;
-    background-size: 50px 50px;
+    background-size: 50px 33px;
 }
-
-
 
 /* .chat-options {
   padding: 10px;
@@ -96,22 +93,27 @@ body {
 }
 
 .user-message {
-  border: 1px solid #1c1c1e;
-  padding: 5px;
-  border-radius: 8px;
-  cursor: pointer;
-  background-color: transparent;
-  align-self: flex-end;
-  max-width: 70%;         
-  margin-left: auto; 
+    border: 1px solid #1c1c1e;
+    padding: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: transparent;
+    align-self: flex-end;
+    max-width: 70%;
+    margin-left: auto;
 }
-
 
 .bot-message .options-inline {
     margin-top: 8px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
     gap: 8px;
+}
+
+.options-wrapper {
+    display: flex;
+    flex-direction: column;
 }
 
 .bot-message .option-button {
@@ -124,33 +126,33 @@ body {
 }
 
 .option-button {
-  background-image: url("https://img.icons8.com/?size=100&id=6703&format=png&color=000000");
-  background-repeat: no-repeat;
-  background-position: 10px center;
-  background-size: 20px 20px;
+    background-image: url("https://img.icons8.com/?size=100&id=6703&format=png&color=000000");
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 20px 20px;
 
-  padding: 10px 16px 10px 40px; /* padding-left to make space for icon */
-  border: 1px solid #1c1c1e;
-  margin: 4px;
-  display: inline-block;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: 0.3s;
+    padding: 10px 16px 10px 40px; 
+    border: 1px solid #1c1c1e;
+    margin: 4px;
+    display: inline-block;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 .option-button:hover {
-  background-color: #ddd;
+    background-color: #ddd;
 }
 
 .option-button.selected {
-  background-image: url("https://img.icons8.com/?size=100&id=6703&format=png&color=000000");
-  background-repeat: no-repeat;
-  background-position: 10px center;
-  background-size: 20px 20px;
+    background-image: url("https://img.icons8.com/?size=100&id=6703&format=png&color=000000");
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 20px 20px;
 
-  background-color: #e7b7b7;
-  color: #864343;
-  border-color: #864343;
+    background-color: #e7b7b7;
+    color: #864343;
+    border-color: #864343;
 }
 
 /* 
@@ -192,7 +194,7 @@ body {
     border-radius: 20px;
     outline: none;
     font-size: 14px;
-    background-color:#ddd ;
+    background-color: #ddd;
 }
 
 .chat-input button {
@@ -201,7 +203,6 @@ body {
     padding: 10px;
     cursor: pointer;
     background-color: #fff;
-    
 }
 
 .small-button {
@@ -210,12 +211,12 @@ body {
     column-gap: 10px;
 }
 
-.carousel-container {
+/* .carousel-container {
     position: relative;
     max-width: 900px;
     margin: 0 auto;
     overflow: hidden;
-}
+} */
 
 .carousel-track {
     display: flex;
@@ -230,9 +231,9 @@ body {
     -webkit-overflow-scrolling: touch;
     gap: 15px;
     padding-bottom: 8px;
-  }
-  
-  .carousel-card {
+}
+
+.carousel-card {
     max-width: 100px;
     background: #f9f9f9;
     padding: 12px;
@@ -240,14 +241,14 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
     flex-shrink: 0;
-  }
-  
-  .carousel-card img {
+}
+
+.carousel-card img {
     max-width: 100%;
     border-radius: 5px;
-  }
-  
-  .carousel-card button {
+}
+
+.carousel-card button {
     margin-top: 10px;
     padding: 8px 12px;
     background-color: #6d521b;
@@ -256,8 +257,7 @@ body {
     font-weight: 600;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
+}
 
 .carousel-arrow {
     position: absolute;
@@ -276,13 +276,58 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 10;
 }
-
-.prev-arrow {
-    left: 5px;
+.event-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
 }
 
-.next-arrow {
-    right: 5px;
+.event-card {
+    position: relative;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ddd;
+}
+
+.event-image-container {
+    position: relative;
+    width: 96%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.event-image-container img {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    object-fit: cover;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.event-title {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.event-subtitle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
 }
 
 .bottom-box {
@@ -291,5 +336,4 @@ body {
     align-items: center;
     font-size: small;
     background-color: #ddd;
-
-} 
+}

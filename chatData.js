@@ -48,7 +48,7 @@ const chatData = [
     },
     {
         id: "taste",
-        text: "Here are some experiences you shouldn't miss to 'Join us at our Halleck Estate for a sublime tasting experience'",
+        text: "Here are some experiences you shouldn't miss to 'Join us at our Halleck Estate for a sublime tasting experiences",
         event: [
             {
                 title: "Sonoma Wine Tasting",
@@ -60,22 +60,22 @@ const chatData = [
                     "Reservations Required",
                     "$78pp for groups of 7-12",
                 ],
-                image: "sonoma-tasting.jpg",
+                image: "https://dummyimage.com/400x150/000/fff",
                 buttonText: "Reserve",
                 link: "/reserve/sonoma-wine-tasting",
             },
         ],
     },
-    {
-        id: "memberships",
-        text: "Explore our memberships to get exclusive wines, tastings, and access to events.",
-        options: [
-            { label: "Taste our wines", nextId: "taste" },
-            { label: "Shop our wines", nextId: "shop" },
-            { label: "Events", nextId: "events" },
-            { label: "Ask a Question", nextId: "ask" },
-        ],
-    },
+    // {
+    //     id: "memberships",
+    //     text: "Explore our memberships to get exclusive wines, tastings, and access to events.",
+    //     options: [
+    //         { label: "Taste our wines", nextId: "taste" },
+    //         { label: "Shop our wines", nextId: "shop" },
+    //         { label: "Events", nextId: "events" },
+    //         { label: "Ask a Question", nextId: "ask" },
+    //     ],
+    // },
     {
         id: "shop",
         text: "Discover our exquisite wine collection, hand-picked for every wine lover.",
@@ -86,16 +86,16 @@ const chatData = [
             { label: "Ask a Question", nextId: "ask" },
         ],
     },
-    {
-        id: "events",
-        text: "We host a variety of events ranging from intimate tastings to grand vineyard celebrations.",
-        options: [
-            { label: "Taste our wines", nextId: "taste" },
-            { label: "Explore our Memberships", nextId: "memberships" },
-            { label: "Shop our wines", nextId: "shop" },
-            { label: "Ask a Question", nextId: "ask" },
-        ],
-    },
+    // {
+    //     id: "events",
+    //     text: "We host a variety of events ranging from intimate tastings to grand vineyard celebrations.",
+    //     options: [
+    //         { label: "Taste our wines", nextId: "taste" },
+    //         { label: "Explore our Memberships", nextId: "memberships" },
+    //         { label: "Shop our wines", nextId: "shop" },
+    //         { label: "Ask a Question", nextId: "ask" },
+    //     ],
+    // },
     {
         id: "ask",
         text: "Sure, feel free to ask me anything about Halleck Vineyard, our wines, or events!",
@@ -109,25 +109,28 @@ const chatData = [
 
     {
         id: "events",
-        text: "Here are some Upcoming Events. If you want to explore more you can click on the link below.",
         carousel: [
             {
-                title: "Turkish Wine Tour Adventure",
+                title: " Wine Tour Adventure",
+                place: "Turkish",
                 date: "Sep 6 - Sep 20, 2025",
                 price: "$20,889.00",
-                image: "turkish-tour.jpg",
+                image: "https://dummyimage.com/300x400/000/fff",
                 buttonText: "Select",
                 nextId: "turkishDetails",
             },
             {
-                title: "Halleck Vineyard Harvest",
+                title: " Vineyard Harvest",
+                place: "Halleck",
                 date: "Oct 19, 2025",
                 price: "$145",
-                image: "harvest.jpg",
+                image: "https://dummyimage.com/300x400/000/fff",
                 buttonText: "Select",
                 nextId: "harvestDetails",
             },
         ],
+        text: "Here are some Upcoming Events. If you want to explore more you can click on the link below.",
+
         options: [
             { label: "Wine Tour Adventure", nextId: "turkishDetails" },
             { label: "Vineyard Harvest", nextId: "harvestDetails" },
@@ -167,20 +170,8 @@ const chatData = [
             buttonLink: "/book/harvest",
         },
     },
-
     {
-        id: "welcome",
-        text: "Welcome to Halleck Vineyard fellow wine enthusiast! I am Halle, your Virtual Concierge and Wine Educator, here to be your guide. Ask me anything about Wine & Halleck",
-        options: [
-            { label: "Taste our wines", nextId: "tasteWines" },
-            { label: "Explore our Memberships", nextId: "memberships" },
-            { label: "Shop our wines", nextId: "shopWines" },
-            { label: "Events", nextId: "events" },
-            { label: "Ask a Question", nextId: "askQuestion" },
-        ],
-    },
-    {
-        id: "memberships",
+        id: "membership",
         text: "We have so many Membership tailored to your taste. You can choose any of the options below",
         options: [
             { label: "6 Bottle Club", nextId: "sixBottleOptions" },
