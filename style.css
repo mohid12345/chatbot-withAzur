@@ -192,15 +192,16 @@ body {
     border-radius: 20px;
     outline: none;
     font-size: 14px;
+    background-color:#ddd ;
 }
 
 .chat-input button {
-    background: #1c1c1e;
     border: none;
     margin-left: 10px;
-    border-radius: 50%;
     padding: 10px;
     cursor: pointer;
+    background-color: #fff;
+    
 }
 
 .small-button {
@@ -283,3 +284,12 @@ body {
 .next-arrow {
     right: 5px;
 }
+
+.bottom-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: small;
+    background-color: #ddd;
+
+} 
